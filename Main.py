@@ -14,3 +14,4 @@ label2 = tk.Label(root, text="Label 2", bg="blue")
 label2.pack(side="top", expand=True, fill="both")
 
 root.mainloop()
+
