@@ -8,6 +8,14 @@ Ziel ist es am Ende die Zertifizierungen *PCEP* und *PCAP* erfolgreich abzuschli
 ## Gui.py
 Erste versuche mit tkinter (Tk interface) GUI Toolkit für Python
 
++ install package pillow to add images
+
++ tk Widgets
+
++ ttk Widgets 
+  + Moderner 
+  + 
+
 ## Passwort-Generator.py
 Als erstes kleines Programm wurde ein Passwort Generator erstellt.
 Die gewünschte Länge des Passworts wird in der Konsole angefragt. Nach eingabe einer Zahl (Integer) wird das generierte Passwort im Terminal ausgegeben.
