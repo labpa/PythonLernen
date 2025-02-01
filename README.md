@@ -10,6 +10,11 @@ Erste versuche mit tkinter (Tk interface) GUI Toolkit für Python
 
 + install package pillow to add images
 
+```python
+for item in label1.keys():
+    print(item, ": ", label1[item])
+```
+
 + tk Widgets
 
 + ttk Widgets 
@@ -19,7 +24,8 @@ Erste versuche mit tkinter (Tk interface) GUI Toolkit für Python
 ## Passwort-Generator.py
 Als erstes kleines Programm wurde ein Passwort Generator erstellt.
 Die gewünschte Länge des Passworts wird in der Konsole angefragt. Nach eingabe einer Zahl (Integer) wird das generierte Passwort im Terminal ausgegeben.
-TODO:
+
+TODO:  
 + Der Passwort-Generator soll mit Tkinter eine grafische Oberfläche bekommen
 + Das erzeugte Passwort soll in Zukunft bei Bedarf gespeichert werden.
 
