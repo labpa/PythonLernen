@@ -1,36 +1,31 @@
 import tkinter as tk
 from tkinter import ttk
-from PIL import Image, ImageTk
+
+# def print_entry_input():
+#     # print(entry1.get())
+#     ttk.Label(root, text=entry1.get()).pack()
+
+
+def delete_input():
+    ttk.Label(root, text=entry1.get()).pack()
+    entry1.delete(0, tk.END)
 
 root = tk.Tk()
 root.title("Hier steht der Titel")
 root.geometry("400x400")
-root.minsize(width=400, height=400)
-root.maxsize(width=400, height=400)
-root.resizable(width=False, height=True)
 
-# Ändern des Themes um aktuelle Änderungen überhaupt anwenden zu können -> Wäre hier nicht nötig gewesen.
-style= ttk.Style()
-style.theme_use("clam")
-
-# Erzeuge eines Objektes mit Inhalt des Logos
-image = Image.open("labpa.jpg").resize((150,150))
-photo = ImageTk.PhotoImage(image)
+entry1 = ttk.Entry(root, width=40)
+entry1.pack()
 
 
-label1 = ttk.Label(root,text="Das ist mein Logo", image=photo, compound="top", padding="50")
-label1.pack()
 
-label1.configure(background="red",font=("Courier", 20))
-
-print(label1.keys())
+button1 = ttk.Button(root, text="Input Löschen", command=delete_input)
+button1.pack()
 
 
-# Ausgabe aller Möglichkeiten in der Console.
-for item in label1.keys():
-    print(item, ": ", label1[item])
 
-
+for item in entry1.keys():
+    print(item, ":", entry1[item])
 
 
 
